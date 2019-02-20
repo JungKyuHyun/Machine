@@ -69,3 +69,15 @@ public class Ex02_1_inherit_Comosite2 {
 		tri.trianglePoint();
 	}
 }
+
+/*
+ is -a (상속: extends) : 원은 도형이다, 삼각형은 도형이다
+ has -a (포함(내부변수) : 원은 점을 가지고 있다.삼각형은 점을 가지고 있다.
+ 			  : class 안에 instance variable ...
+ 			  : class circle { point p; }
+ 
+ 			 p 변수가 circle 내에서 new 발생(복합)
+ 			 p 변수가 외부에서 주소를 받아오면 (집합)
+ 			 Point point = new Point();
+ 			 circle.p = point;
+*/
