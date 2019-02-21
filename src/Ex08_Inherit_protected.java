@@ -31,5 +31,4 @@ public class Ex08_Inherit_protected {
 		Child2 ch = new Child2();
 		ch.method();
 	}
-
 }
