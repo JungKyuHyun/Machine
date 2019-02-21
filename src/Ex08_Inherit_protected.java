@@ -7,11 +7,19 @@ import kr.or.bit.Pclass;
 //상속관계에서 Protected
 
 //why? class Car{protected void turn(){} }
+//나를 상속하는 당신이 자원을 제정의 했으면 좋겠는데... (의도)
 class Child2 extends Pclass{
 	void method() {
 		this.p=1000; //상속관계에서 protected는 public
 		System.out.println(this.p);
 	}
+
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		// TODO Auto-generated method stub
+		return super.clone();
+	}
+	
 }
 
 public class Ex08_Inherit_protected {
